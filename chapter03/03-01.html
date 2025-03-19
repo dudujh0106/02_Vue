@@ -7,18 +7,27 @@
   </head>
   <body>
     <div id="app">
-      <!-- <h2>{{message}}</h2> -->
-      <h2 v-text="message"></h2>
+      <!-- 보간법 == v-text  -->
+      <div>{{message}}</div>
+
+      <!-- v-text -->
+      <div v-text="message"></div>
+
+      <!-- v-html -->
+      <div v-html="message"></div>
     </div>
     <script type="text/javascript" src="https://unpkg.com/vue"></script>
     <script type="text/javascript">
       // Model(데이터)
       var model = { message: '<h2>Hello Vue3!</h2>' };
-      // Vue 모델
-      // (Vue 인스턴스 == 어플리케이션)
+      // View Model
+      // (Vue 인스턴스 == 애플리케이션 인스턴스 == 루트 컴포넌트 인스턴스)
       var vm = Vue.createApp({
         name: 'App',
         data() {
+          // 데이터 옵션 :
+          // - return 되는 객체의 데이터 변경 시 화면(view) 변경
+          // - proxy 객체가 제어
           return model;
         },
       }).mount('#app');
