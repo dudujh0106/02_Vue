@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- View : 보여지는 부분 -->
+      <h2>{{message}}</h2>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      // Model : 비즈니스 로직 결과(데이터)
+      let model = { message: 'Hello Vue3!' };
+      // View Model : model 변경 시 view 수정
+      let vm = Vue.createApp({
+        name: 'App',
+        data() {
+          return model;
+          // data 함수에서 return 되는 객체는 vue의 반응형 시스템에 의해서 관리됨!!
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>
