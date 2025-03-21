@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+    <style>
+      td > a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="mt-4 p-5 bg-primary text-white"
+        style="background-image: url(image.png); background-size: 100%"
+      >
+        <h1>Fullstack Study</h1>
+        Vue+자바 기반의 풀스택 기술을 배웁니다.
+      </div>
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><i class="fa-solid fa-house"></i> Fullstack</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">메뉴1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">메뉴2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">메뉴3</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="profile.png"
+                    alt="Avatar Logo"
+                    style="width: 30px; height: 30px"
+                    class="rounded-pill"
+                  />
+                  admin
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  로그아웃
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 class="mt-5">
+        <i class="fa-solid fa-list"></i>
+        글 목록
+      </h1>
+      <table class="table mb-5">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>등록일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="#">글 제목1</a></td>
+            <td>user01</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="#">글 제목2</a></td>
+            <td>user01</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="#">글 제목3</a></td>
+            <td>user01</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="#">글 제목4</a></td>
+            <td>user01</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="#">글 제목5</a></td>
+            <td>user01</td>
+            <td>2025-03-21</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-around">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="fa-solid fa-backward-step"></i
+            ></a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item active"><a class="page-link" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="fa-solid fa-forward-step"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <button class="btn btn-primary">
+            <i class="fa-regular fa-pen-to-square"></i>
+            글쓰기
+          </button>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <i class="fa-regular fa-copyright"></i> 2024.05 created by fullstack
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="../bootstrap.bundle.min.js"></script>
+  </body>
+</html>
