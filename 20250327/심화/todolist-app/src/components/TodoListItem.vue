@@ -1,23 +1,23 @@
 <template>
   <li
-    :key="todoitem.id"
+    :key="todoItem.id"
     class="list-group-item d-flex justify-content-between"
-    :class="{ 'list-group-item-success': todoitem.completed }"
+    :class="{ 'list-group-item-success': todoItem.completed }"
   >
     <div>
       <input
         type="checkbox"
         class="pointer"
-        @change="toggleCompletedHandler(todoitem.id)"
-        :checked="todoitem.completed"
+        @change="toggleCompletedHandler(todoItem.id)"
+        :checked="todoItem.completed"
       />
-      <span class="ms-2" :class="{ 'todo-done': todoitem.completed }"
-        >{{ todoitem.todo }} {{ todoitem.completed ? '(완료)' : '' }}</span
+      <span class="ms-2" :class="{ 'todo-done': todoItem.completed }"
+        >{{ todoItem.todo }} {{ todoItem.completed ? '(완료)' : '' }}</span
       >
     </div>
     <button
       class="btn btn-dark btn-sm rounded-3 py-0"
-      @click.stop="emit('delete-todo', todoitem.id)"
+      @click.stop="emit('delete-todo', todoItem.id)"
     >
       삭제
     </button>
@@ -26,7 +26,7 @@
 <script setup>
 // props : 부모로부터 전달 받은 데이터 수신 + 유효성 검사
 const props = defineProps({
-  todoitem: {
+  todoItem: {
     type: Object,
     required: true, // 필수 데이터
   },

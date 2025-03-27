@@ -8,7 +8,7 @@
     -->
     <TodoListItem
       v-for="todo in todoList"
-      :todoitem="todo"
+      :todoItem="todo"
       @toggle-completed="emit('toggle-completed', $event)"
       @delete-todo="emit('delete-todo', $event)"
     />
